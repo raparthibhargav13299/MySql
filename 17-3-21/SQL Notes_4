@@ -1,0 +1,61 @@
+----TOPICS
+-JOINS
+-UNIONS
+-STORED PROCEDURES
+    --Stored procedures are set of SQL statements, decalred with some name.
+    --Stored procedures are very efficient and fast
+    --Stored procedures are very simple to use, because it reduces client server traffci, cleint just need
+      to call stored procedure name. get_merit_students(); cleanup_space();
+-VIEWS
+    --Virtual view of a table.
+    table: 1000
+    java_trainers: sping, hibernate, services, testing
+    .Net_trainer: asp, ado, WPF
+    Python_Trainer:
+    
+-TRIGGERS
+    --A trigger is executed in response to any event.
+        --BEFORE INSERT
+        --AFTER INSERT
+        --BEFORE UPDATE
+        --AFTER UPDATE
+        --BEFORE DELETE
+        --AFTER DELETE
+
+Example: emp_work
+
+    table: emp_work
+            emp_id: 1
+            emp_name: "Suzy"
+            emp_work_hours: -25
+
+
+
+JOIN:
+-----------
+Joining two table to get some result, if there are no primary key or foreign key, still we can able to join the table.
+
+
+
+
+---department
+    -detp_ID: 101
+    --detp_Name: "Human Resources"
+
+
+
+
+---employee
+    -emp_ID: 1
+    -emp_Name: Andy
+    -dep_ID: 101
+    
+    
+    ** Want to fetch the records of the employees who are working in some department: 
+    ** Want to fetch the all employees whos department is allocated and also employees whose department is not allocated
+    
+        1 Andy HR
+        2 Selina DS
+        3 George AC
+        4 Tina null
+        5 Rose null

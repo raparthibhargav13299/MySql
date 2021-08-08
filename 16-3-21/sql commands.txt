@@ -1,0 +1,2 @@
+sql commands- cntrl+ enter
+ctrl+ shift+enter

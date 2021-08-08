@@ -1,0 +1,122 @@
+Difference between DROP, DELETE, TRUNCATE
+--------------------------------------------
+-DROP: It will be used to delete the database completely along with the data inside it, and also the database
+itself--> DATABASE, TABLE, COLUMN
+-DELETE: It will delete the data from the database or table, but it won't delete the structure of database or table
+        --Delete can be used along with condition WHERE clause: DML
+-TRUNCATE: DDL: Unconditional
+
+
+------CONSTRAINTS-------
+-Primary Key
+-Foreign Key
+-Unique
+-Composite Key
+
+--Primary Key: Primary key is used to uniquely identify the rows in a table.
+   --We can have only one primary key per table.
+   --we can't have null values
+   
+--Unique Key: Unique is also used to uniquely identify the rows in table.
+    --Unique key can have one NULL value
+    --we can have more than one uniq keys in our table
+
+---Composite Key:
+
+-----Transaction: where two parties are invovled for sending or receiving the data or money
+Google Pay: Aditya ---> Lohith
+--Adithya sender: 10000 --->5000 10000-5000=5000
+--Lohith receiver: 20000 <---5000 20000+5000=25000
+
+
+    amazon: Laptop:
+        --put in kart
+        --you make the payment
+        --seller will receive the money---did not receive
+        --order details history in your account
+        --he will deliver the product
+
+"eitehr complete all the SQL statements or none of them"
+statement-1
+--done
+statement-2
+--done   ---> rollback st-2 to st-1
+statement-3
+--done
+statement-4 ---> roollback st-4 to st-1
+--did not receive
+statement-5
+statement-6
+statement-7
+
+ACID:
+Atomicity: eitehr complete all the SQL statements or none
+C: Consistency: after completing all the transactions then only it will make the changes in DB
+I: Isolation: Lots of transaction are going on but without interference ---->10000-2500
+D: Durability: after the all transactions, changes will pe permanent
+
+
+
+
+In SQL by default: Every statement will be executed as single statement.
+setautocommit=0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
